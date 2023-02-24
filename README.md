@@ -1,1 +1,1 @@
-# -emscripten-imgui-cmake-template-
+# emscripten-imgui-cmake-template
