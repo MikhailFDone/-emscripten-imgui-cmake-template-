@@ -1,5 +1,7 @@
 cmake_minimum_required(VERSION 3.16)
 
+include(cmake/DearImGui.cmake)
+
 # set the project name and version
 project(EmscriptenDearImGui)
 

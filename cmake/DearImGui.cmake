@@ -10,10 +10,10 @@ add_library(imgui STATIC
     "./dependencies/imgui_tables.cpp"
     "./dependencies/imgui_widgets.cpp"
 
-    "./dependencies/backends/imgui_impl_sdl.h"
+    "./dependencies/backends/imgui_impl_sdl2.h"
     "./dependencies/backends/imgui_impl_opengl3.h"
 
-    "./dependencies/backends/imgui_impl_sdl.cpp"
+    "./dependencies/backends/imgui_impl_sdl2.cpp"
     "./dependencies/backends/imgui_impl_opengl3.cpp"
 )
 add_library(imgui::imgui ALIAS imgui)
@@ -24,7 +24,6 @@ target_include_directories(imgui SYSTEM PUBLIC
     "./dependencies"
 )
 
-set_target_warnings_disabled(imgui)
 set_target_properties(imgui PROPERTIES FOLDER dependencies)
 
 # Make all IMGUI files visible
